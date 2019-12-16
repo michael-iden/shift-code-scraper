@@ -1,4 +1,5 @@
-creds
+creds/*
+!creds/.gitkeep
 .env
 .python-version
 .idea
