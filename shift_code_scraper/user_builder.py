@@ -10,7 +10,7 @@ CREDENTIALS_PATH = path.join(DIRNAME, '../creds/')
 def build_users():
     users = []
 
-    users_files = [join(CREDENTIALS_PATH, f) for f in listdir(CREDENTIALS_PATH) if isfile(join(CREDENTIALS_PATH, f))]
+    users_files = [join(CREDENTIALS_PATH, f) for f in listdir(CREDENTIALS_PATH) if isfile(join(CREDENTIALS_PATH, f)) and '.txt' in f]
     for user_file in users_files:
         with open(user_file) as user_reader:
             file_lines = user_reader.read().splitlines()
