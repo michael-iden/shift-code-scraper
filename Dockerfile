@@ -7,5 +7,5 @@ RUN pip install -r /requirements.txt
 COPY . /app
 WORKDIR /app
 
-CMD exec python app.py > output.txt
+CMD exec python app.py
 
